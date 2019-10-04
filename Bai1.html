@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let toan, van, anh, tb = 0;
+    do {
+        toan = Number(prompt("Nhập điểm toán"));
+    } while(toan<0||toan>10)
+    do {
+        van = Number(prompt("Nhập điểm văn"));
+    } while(van<0||van>10)
+    do {
+        anh = Number(prompt("Nhập điểm anh"));
+    } while(anh<0||anh>10)
+
+    /*do {
+        toan = Number(prompt("Nhập điểm toán"));
+        if(toan<0 || toan>10){
+            alert("Nhập lại điểm toán");
+            continue;
+        } else {
+            van = Number(prompt("Nhập điểm văn"));
+            if(van<0 || van>10) {
+                alert("Nhập lại điểm văn");
+                continue;
+            } else {
+                anh = Number(prompt("Nhập điểm anh"));
+                if(anh<0 || anh>10) {
+                    alert("Nhập lại điểm anh");
+                    continue;
+                } else {
+                    break;
+                }
+            }
+        }
+    }while(true)*/
+
+    tb = ((toan*2) + van + (anh*2))/5;
+
+    if(tb>8.5) {
+        document.write(tb + " => Tốt");
+    } else if(tb<8.5 && tb>=7.6) {
+        document.write(tb + " => Khá");
+    } else if(tb<7.5 && tb>=5) {
+        document.write(tb + " => Đạt");
+    } else {
+        document.write(tb + " => Không đạt");
+    }
+
+</script>
+</body>
+</html>
