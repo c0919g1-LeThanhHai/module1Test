@@ -8,13 +8,13 @@
 <script>
     let toan, van, anh, tb = 0;
     do {
-        toan = Number(prompt("Nhập điểm toán"));
+        toan = parseFloat(prompt("Nhập điểm toán"));
     } while(toan<0||toan>10)
     do {
-        van = Number(prompt("Nhập điểm văn"));
+        van = parseFloat(prompt("Nhập điểm văn"));
     } while(van<0||van>10)
     do {
-        anh = Number(prompt("Nhập điểm anh"));
+        anh = parseFloat(prompt("Nhập điểm anh"));
     } while(anh<0||anh>10)
 
     /*do {
